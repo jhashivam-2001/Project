@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Restaurant Food Quantity Estimator 
+        </title>
+    </head>
+    <body>
+        <p>
+            INPUT IN THE ORDER FROM LEFT TO RIGHT AS FOLLOWS :--
+
+            1.Shift 2.Day 3.PartySize 4.MenuCateogry 5.MenuItem 6.ItemPrice 
+
+            ***For the day field enter 1 for Monday..2 for tuesday..and so on 
+        </p>
+        <form method="POST" action="/">
+            <input type="text" name="Shift" placeholder="Enter Here"/>
+            <input type="number" name="Day" placeholder="Enter Here"/>
+            <input type="number" name="PartySize" placeholder="Enter Here"/>
+            <input type="text" name="MenuCateogry" placeholder="Enter Here"/>
+            <input type="text" name="MenuItem" placeholder="Enter Here"/>
+            <input type="number" name="ItemPrice" placeholder="Enter Here"/>
+            <input type="submit" value="Submit"/>
+        </form>
+        <p>
+            Item quantity estimated for the table is {{prediction}}
+        </p>
+    </body>
+</html>
